@@ -5,43 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aatish Gupta - Engineering Portfolio</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #333;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         header {
-            background-color: #f4f4f4;
-            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
             text-align: center;
         }
-        h1, h2 {
-            color: #2c3e50;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 40px 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
         .project {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
             margin-bottom: 30px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
         }
+
+        .project h3 {
+            color: var(--secondary-color);
+        }
+
         .contact-info {
             margin-top: 20px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Aatish Gupta</h1>
-        <p>Mechanical Engineering Graduate Student at Carnegie Mellon University</p>
-        <div class="contact-info">
-            <p>Email: aatishg01@gmail.com | Phone: 609-367-5032</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/aatish-gupta-8b830419a">linkedin.com/in/aatish-gupta-8b830419a</a></p>
+        <div class="container">
+            <h1>Aatish Gupta</h1>
+            <p>Mechanical Engineering Graduate Student at Carnegie Mellon University</p>
         </div>
     </header>
 
-    <main>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#coursework">Coursework</a></li>
+                <li><a href="#miscellaneous">Miscellaneous</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
         <section id="about">
             <h2>About Me</h2>
             <p>I am currently a Master's student in Mechanical Engineering at Carnegie Mellon University. My interests are primarily in robotics and design. I started working with soft robotic actuators in high school and have continued to pursue this field throughout my academic career. My experience in research has been extremely fulfilling and has led me to pursue my Master's degree with the hope of continuing to work on emerging technologies.</p>
@@ -109,7 +197,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Aatish Gupta. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Aatish Gupta. All rights reserved.</p>
+            <div class="contact-info">
+                <p>Email: aatishg01@gmail.com | Phone: 609-367-5032</p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/aatish-gupta-8b830419a">linkedin.com/in/aatish-gupta-8b830419a</a></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
