@@ -1,266 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aatish Gupta - Engineering Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --background-color: #ecf0f1;
-            --text-color: #333;
-        }
-        
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        nav {
-            background-color: var(--secondary-color);
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 40px 0;
-        }
-
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
-        }
-
-        .project {
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-
-        .project h3 {
-            color: var(--secondary-color);
-        }
-
-        .contact-info {
-            margin-top: 20px;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Aatish Gupta</h1>
-            <p>Mechanical Engineering Graduate Student at Carnegie Mellon University</p>
-        </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#coursework">Coursework</a></li>
-                <li><a href="#miscellaneous">Miscellaneous</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am currently a Master's student in Mechanical Engineering at Carnegie Mellon University. My interests are primarily in robotics and design. I started working with soft robotic actuators in high school and have continued to pursue this field throughout my academic career. My experience in research has been extremely fulfilling and has led me to pursue my Master's degree with the hope of continuing to work on emerging technologies.</p>
-        </section>
-
-        <section id="research">
-            <h2>Research Projects</h2>
-            
-            <div class="project">
-                <h3>Modular Multi-Deformation Mode Soft Pneumatic Actuators</h3>
-                <p><strong>Rowan Robotics & Human Machine Interactions Lab</strong> | September 2022 - December 2022</p>
-                <p>Worked on creating a modular soft robotic actuator with three degrees of freedom, involving ANSYS simulations, fabrication method development, and experimental verification.</p>
-            </div>
-
-            <div class="project">
-                <h3>IntelliPad: Soft-Solid Contacts for Biomedical Applications</h3>
-                <p><strong>Rowan Robotics & Human Machine Interactions Lab</strong> | February 2022 - Present</p>
-                <p>Developing a modular soft robotic pad to reduce stress injuries in wheelchair-bound or bed-confined patients, focusing on integrating thermal and force transducers into the modules.</p>
-            </div>
-
-            <div class="project">
-                <h3>Exo-skin-esphere: A Collaboration between Dance and Science</h3>
-                <p><strong>Rowan Robotics & Human Machine Interactions Lab</strong> | September 2022 - December 2022</p>
-                <p>Created soft robotic actuators to enhance a dance performance, designing actuators that expand, contract, and light up based on dancers' movements.</p>
-            </div>
-        </section>
-
-        <section id="coursework">
-            <h2>Coursework Projects</h2>
-
-            <div class="project">
-                <h3>The Wyrm: RoboSoft 2022 Terrestrial Competition Entry</h3>
-                <p><strong>ENGR 01303 - Junior Engineering Clinic</strong> | September 2021 - May 2022</p>
-                <p>Led a team in developing an autonomous locomotive soft robot for the RoboSoft 2022 terrestrial competition, achieving locomotion on various surfaces and obstacle avoidance.</p>
-            </div>
-
-            <div class="project">
-                <h3>Planetary Gearset Design</h3>
-                <p><strong>ME 10301: Machine Design</strong> | February 2022 - May 2022</p>
-                <p>Created a planetary gearset to step down two 200 RPM inputs to 100 RPM, involving mathematical modeling, design, and fabrication.</p>
-            </div>
-        </section>
-
-        <section id="miscellaneous">
-            <h2>Miscellaneous Projects</h2>
-
-            <div class="project">
-                <h3>MATLAB Modeling of Temperature Distribution Over a Planar Surface</h3>
-                <p><strong>Personal Interest Project</strong> | February 2022</p>
-                <p>Developed a MATLAB model to calculate exact solutions for surface temperature distribution without recursion, improving upon an Excel-based method.</p>
-            </div>
-
-            <div class="project">
-                <h3>Implementing Design Thinking and Innovation at Rowan University</h3>
-                <p><strong>University Innovation Fellows</strong> | September 2022 - Present</p>
-                <p>Inducted into the University Innovation Fellows, organizing events to promote design thinking and innovation on campus.</p>
-            </div>
-
-            <div class="project">
-                <h3>Modeling Gas Flow and Build Chamber Temperature in Metal Additive Manufacturing</h3>
-                <p><strong>24-718: Computational Fluid Dynamics</strong> | November 2023 - December 2023</p>
-                <p>Constructed a finite difference solver in Python to simulate gas flow in metal 3D printers, optimizing inlet and outlet positions for improved manufacturing processes.</p>
-            </div>
-        </section>
-        <section id="resume">
-    <h2>Resume</h2>
-    <div class="resume-content">
-        <h3>Aatish Gupta</h3>
-        <p>aatishg01@gmail.com | 609-367-5032 | <a href="https://linkedin.com/in/aatish-gupta-8b830419a">LinkedIn</a></p>
-
-        <h4>Education</h4>
-        <h5>Carnegie Mellon University - Pittsburgh, PA</h5>
-        <p>Master of Science in Mechanical Engineering</p>
-        <p>Expected Graduation: 2025 | QPA: 3.84</p>
-
-        <h5>Rowan University - Glassboro, NJ</h5>
-        <p>Bachelor of Science in Mechanical Engineering</p>
-        <p>Graduated: 2023 | GPA: 3.53</p>
-        <ul>
-            <li>Physics Minor</li>
-            <li>Bantivoglio Honors Concentration</li>
-        </ul>
-
-        <h4>Experience</h4>
-        <h5>CERLAB - Dr. Kenji Shimada</h5>
-        <p>Master's Student Researcher | Carnegie Mellon University, Pittsburgh, PA | January 2024 - Present</p>
-        <ul>
-            <li>Conducting research in multi-agent semantic SLAM for industrial mapping and inspection.</li>
-        </ul>
-
-        <h5>Robotics & Physical Human-Machine Interactions Lab - Dr. Mitja Trkov</h5>
-        <p>Soft Robotics Research Assistant | Rowan University, Glassboro, NJ | February 2022 - October 2023</p>
-        <ul>
-            <li>Developed novel pneumatic and cable-driven soft robotic actuators.</li>
-            <li>Used ANSYS to model behavior of soft robotics actuators and refine their design.</li>
-            <li>Developed novel polymer casting methods that served as a critical aspect of a published journal.</li>
-        </ul>
-
-        <!-- Add more experience entries here -->
-
-        <h4>Technical Skills</h4>
-        <ul>
-            <li>Programming languages: C++, Python, MATLAB, JavaScript</li>
-            <li>Controls Coursework: Dynamic Systems and Controls, Modern Control Theory, Multivariable Linear Control (Robust Control), Advanced Control Systems Integration</li>
-            <li>Software: AutoCAD Inventor, SolidWorks, OnShape, Blender, ANSYS, MATLAB</li>
-            <li>Machining and Prototyping: 3D Printing, Polymer Casting Fabrication methods, laser cutting/engraving, machining (manual mill, lathe, drill press), designing for injection molding</li>
-        </ul>
-
-        <h4>Competitions</h4>
-        <h5>RoboSoft 2022 Terrestrial Race</h5>
-        <p>Edinburgh, Scotland | April 2022</p>
-        <ul>
-            <li>Managed and participated in a team of six fellow students to develop a terrestrial locomotive soft robot to compete virtually against international teams.</li>
-        </ul>
-
-        <h4>Journal Articles</h4>
-        <p>Pagliocca, N., Gupta, A., Knospler, J., Singh, N. & Trkov, M. (2023) Modular Multi-Deformation Mode Soft Pneumatic Actuators, Sensors and Actuators A: Physical, https://doi.org/10.1016/i.sna.2024.115830</p>
-    </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<header role="banner">
+<div><nav role="navigation">
+<ul>
+<li><a href="#research">Research</a></li>
+<li><a href="#coursework">Coursework</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#resume">Resume</a></li>
+</ul>
+</nav></div>
+<div>
+<div>
+<h1>Aatish Gupta</h1>
+<p>MS in Mechanical Engineering at Carnegie Mellon University</p>
+</div>
+</div>
+</header>
+<section>
+<div>
+<h2>My Work</h2>
+<div>
+<div>
+<div>
+<h3>Portfolio Template</h3>
+<h2>Research Projects</h2>
+<div>
+<h3>Modular Multi-Deformation Mode Soft Pneumatic Actuators</h3>
+<p><strong>Rowan Robotics &amp; Human Machine Interactions Lab</strong> | September 2022 - December 2022</p>
+<p>This work is published in <a href="https://www.sciencedirect.com/science/article/pii/S0924424724008240">Sensors and Actuators A: Physical</a>.</p>
+<p>Soft actuators have gained popularity in materials and engineering research for their use cases in handling delicate objects and for their potential biomedical applications. Current research on soft actuators shows promise, but the application potential of a given actuator is limited by its lack of reconfigurability. For example, the popular PneuNets actuator cannot form multi-unit connections without the use of adhesives or mold modifications. In this paper we propose the design of a reconfigurable soft actuator with multiple degrees to mitigate this limitation.</p>
+<p>Our design phase for the actuator consisted of simulations of the design of a 3D model, followed by fabrication. The design was created in SOLIDWORKS and consecutively tested in ANSYS/explicit, a commercial finite element simulation environment. The geometry of the design was iteratively improved based on the results of the simulations. The actuator consists of &ldquo;unit cells&rdquo; made of silicone rubber and 3D printed thermoplastic polyurethane (TPU) which are rigidly connected together using 3D printed polylactic acid (PLA) connectors. The silicone rubber bladder deforms as it is filled with air, and its deformation mode is guided by a less flexible TPU shell. When connected together, these unit cells produce extensile or bending motions. One of the main focuses of the paper is the impact of the aspect ratio of inter-unit connections on the deformation modes of the actuator. By shifting the position of each unit with respect to the following one, we found in the simulations that we could impact the way the actuator extended or bended.</p>
+<p>Our experimental design included both the fabrication and testing. The silicone rubber bladders were produced using a three part PLA mold to produce half of each bladder. The halves were then joined together in the final step. As stated before, the PLA and TPU parts were 3D printed.</p>
+<p>To test the actuator&rsquo;s force output, we placed three connected units inside a load frame and recorded the force applied as a function of pressure applied to the actuator. The actuator was able to produce up to 40 N of force at a pressure of 15 kPa.</p>
+<p>To test the actuator&rsquo;s free displacement characteristics, we suspended the actuator vertically from a custom testing apparatus. Horizontal and vertical displacement were measured for the actuator in multiple configurations. We varied the aspect ratio of the connections, the number of unit cells in the configuration, the angular position of unit cells with respect to one another, and the level of pressure applied. We were able to determine that each one of these factors had a significant impact on the deformation modes of the actuator. In the case of extensile motion, connection aspect ratio increased or decreased the range of motion by 60%.</p>
+<p>It is difficult to compare the significance of this against existing actuators since they are not reconfigurable. To test the actuator&rsquo;s potential for gripping objects, two actuators were configured as a gripper. The gripper was able to grasp an orange (210 g), a banana (182 g), an apple (130 g), and an uncooked egg (60 g), all without damaging the objects and while supporting their full weight.</p>
+<p>The actuator was also configured into a mobile crawling robot to evaluate its potential for locomotion. The robot was able to move around 11.9% of its body length per stride. While this metric is not easily compared to the literature, its speed of 16 meters per hour is comparable to locomotive soft robots in the cited literature (18m/h).</p>
+<p>In conclusion, we demonstrated the potential of a reconfigurable soft robotic actuator. We showed that the actuator has potential use cases in gripping delicate objects and in producing mobile robots. We evaluated the impact of its capacity for reconfiguration on its ability to apply force, its deformation modes, and its use cases. Our next steps include making the design easier and cheaper to fabricate, and adding unit cells to evaluate its impact on functionality and applicability. We have shown that the introduction of reconfigurability to actuators can have a huge impact on the field of soft robotics.</p>
+</div>
+</div>
+<div>
+<h2>Exo-skin-esphere: A Collaboration between Dance and<br />Science</h2>
+<img src="https://github.com/aatishg01/Portfolio/blob/main/Screenshot%202024-12-08%20203843.png" alt="" /><br /><a href="https://sites.google.com/rowan.edu/mtrkov/home?authuser=0">Rowan Robotics &amp; Human Machine Interactions Lab</a><br />September 2022 &ndash; December 2022<br />
+<p><span style="font-weight: 400;">In 2022 a Rowan University adjunct dance professor, Leslie Bush, contacted my undergraduate mentor Dr. Mitja Trkov and asked to collaborate on a dance project. Trkov works on wearable soft robotics, which Bush believed could look organic enough to create an alien sort of &ldquo;breathing&rdquo; action on her dancers. A graduate student and I were tasked with creating expanding and contracting actuators that would be mounted on the dancers&rsquo; bodies and interact with their motions throughout the show to create these breathing motions.</span></p>
+<p><span style="font-weight: 400;">We used IMU units placed on the dancers&rsquo; limbs to record their movements. We also created hollow accordion shaped structures out of 3D printed TPU that could be compressed in a manner that looked like breathing. These accordions were actuated by fishing wire inside of them being spooled by a servo. The TPU was also translucent to disperse the light from the LEDs inside the accordions. <br /></span></p>
+<p><span style="font-weight: 400;">We were constrained by a tight deadline and were severely understaffed. We had to create upwards of 30 actuators within the timeframe allotted, and as a result the functionality of the devices was severely limited. We were able to make the expansion and contraction mechanism work on a few devices, but not consistently enough to be used in the final product. The biggest hassle was creating the actuators, which required hours of tuning 3D printer settings. We worked closely with the costume designer to get the work finished, and we were able to get the actuators on the dancers with LEDs inside, although the IMU and actuation components were not consistently functional enough to be deployed on the dancers.</span></p>
+<p><span style="font-weight: 400;">In the end, it was still a mesmerizing performance that I am proud to have contributed to. The choreography was perfectly suited to and enhanced by the design I created.</span></p>
+</div>
+<div>
+<div>
+<h3>Notificator</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eius.</p>
+<ul>
+<li>React</li>
+<li>Next.js</li>
+<li>Node</li>
+<li>MongoDB</li>
+</ul>
+<div><a href="#"> Visit Site &rarr; </a> <a href="#"> <img title="View Source Code" src="./images/github.svg" alt="GitHub" /> </a></div>
+</div>
+<div><img src="./images/project-3.png" alt="Project 3" /></div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Aatish Gupta. All rights reserved.</p>
-            <div class="contact-info">
-                <p>Email: aatishg01@gmail.com | Phone: 609-367-5032</p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/aatish-gupta-8b830419a">linkedin.com/in/aatish-gupta-8b830419a</a></p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+<section>
+<div>
+<h2>Clients</h2>
+<div><img src="./images/ronjones.png" alt="Company 2" /> <img src="./images/goldengrid.png" alt="Company 3" /> <img src="./images/bullseye.png" alt="Company 1" /> <img src="./images/mighty-furnitures.png" alt="Company 1" /> <img src="./images/fastlane.png" alt="Company 3" /> <img src="./images/chippy.png" alt="Company 1" /></div>
+</div>
+</section>
+<section>
+<div>
+<h2>About Me</h2>
+<div>
+<div>
+<p>I am currently a Master's student in Mechanical Engineering at Carnegie Mellon University. My interests are primarily in robotics and design. I started working with soft robotic actuators in high school and have continued to pursue this field throughout my academic career. My experience in research has been extremely fulfilling and has led me to pursue my Master's degree with the hope of continuing to work on emerging technologies.</p>
+<a href="#">My Resume</a></div>
+<div><img src="./images/syed-ali-hussnain.jpg" alt="" /></div>
+</div>
+</div>
+</section>
+<section>
+<div>
+<h2>Get in Touch</h2>
+<div>
+<p>Are you looking for a fast-performing and user-friendly website to represent your product or business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just want to say "Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊 The quickest way to reach out to me is via an email.</p>
+<a href="mailto:you@example.com">you@example.com</a></div>
+</div>
+</section>
+<footer role="contentinfo">
+<div>
+<ul>
+<li><a title="Link to Twitter Profile" href="https://twitter.com/nisarhassan12/"> <img src="./images/twitter.svg" alt="Twitter" /> </a></li>
+<li><a title="Link to Github Profile" href="https://github.com/nisarhassan12/"> <img src="./images/github.svg" alt="Github" /> </a></li>
+<li><a title="Link to Codepen Profile" href="https://codepen.io/nisar_hassan"> <img src="./images/codepen.svg" alt="Codepen" /> </a></li>
+<li><a href="https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/&quot;"> <img title="Link to Linkedin Profile" src="./images/linkedin.svg" alt="Linkedin" /> </a></li>
+</ul>
+<p>&copy; 2020 - Template designed &amp; developed by <a href="https://nisar.dev">Nisar</a>.</p>
+<div><iframe title="Watch Portfolio Template on GitHub" src="https://ghbtns.com/github-btn.html?user=nisarhassan12&amp;repo=portfolio-template&amp;type=watch&amp;count=true" width="170" height="20" frameborder="0" scrolling="0">
+ </iframe></div>
+</div>
+</footer>
+<p><a title="Back to Top" href="#top"> <img src="./images/arrow-up.svg" alt="Back to Top" /> </a></p>
